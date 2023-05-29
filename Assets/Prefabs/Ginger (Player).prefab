@@ -191,7 +191,7 @@ MonoBehaviour:
   fireObject: {fileID: 6912175555899301926, guid: fa98cbf82d01b8742bd721f1ddcfd7dc, type: 3}
   fireObjectTransform: {fileID: 8150220838774647028}
   runSpeed: 5
-  jumpSpeed: 25
+  jumpSpeed: 28
   climbingSpeed: 5
   deathKick: {x: 20, y: 20}
 --- !u!61 &914144874

@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
    
     void Die()
     {
-        if(gingerBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies")))
+        if(gingerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Water")))
         {
             isAlive = false;
             gingerAnimator.SetTrigger("Dying");

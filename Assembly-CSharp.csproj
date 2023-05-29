@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E1DDCD11-7E0A-5FDA-26BF-C84E8DE927E2}</ProjectGuid>
+    <ProjectGuid>{C2692F40-CD92-BF4F-CB86-2D4ECAD137C1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Fire.cs" />
     <Compile Include="Assets\Scripts\Gobber.cs" />
+    <Compile Include="Assets\Scripts\LevelExit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
