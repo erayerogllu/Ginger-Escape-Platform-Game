@@ -112,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
             gingerAnimator.SetTrigger("Dying");
             gingerRigidBody.velocity = deathKick;
             gingerRigidBody.simulated = false;
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
             
         }
 

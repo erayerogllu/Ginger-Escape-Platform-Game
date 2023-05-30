@@ -57,6 +57,8 @@
     <Compile Include="Assets\Scripts\Fire.cs" />
     <Compile Include="Assets\Scripts\Gobber.cs" />
     <Compile Include="Assets\Scripts\LevelExit.cs" />
+    <Compile Include="Assets\Scripts\GameSession.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

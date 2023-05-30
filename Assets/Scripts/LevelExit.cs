@@ -10,23 +10,28 @@ public class LevelExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        StartCoroutine(LoadNextLevel());
+       if(other.tag == "Player")
+        {
 
-        
+            StartCoroutine(LoadNextLevel());
+
+        }
+
         IEnumerator LoadNextLevel()
         {
             yield return new WaitForSecondsRealtime(levelDelayTime);
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             int nextSceneIndex = currentSceneIndex + 1;
 
-            if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+            if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
             {
                 nextSceneIndex = 0;
             }
             SceneManager.LoadScene(nextSceneIndex);
         }
 
-        
+
+
     }
 
 }
