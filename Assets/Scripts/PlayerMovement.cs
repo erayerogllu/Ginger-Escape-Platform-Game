@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField] GameObject fireObject;
     [SerializeField] Transform fireObjectTransform;
+    
 
 
     [SerializeField] float runSpeed = 0f;
@@ -108,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(gingerFeetCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Water")))
         {
-            isAlive = false;
+            isAlive = false; 
             gingerAnimator.SetTrigger("Dying");
             gingerRigidBody.velocity = deathKick;
             gingerRigidBody.simulated = false;
@@ -127,6 +128,5 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-
 
 }

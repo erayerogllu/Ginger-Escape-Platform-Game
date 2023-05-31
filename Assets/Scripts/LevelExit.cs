@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class LevelExit : MonoBehaviour
 {
     [SerializeField] float levelDelayTime;
+    [SerializeField] AudioClip levelExitSFX;
     
 
     private void OnTriggerEnter2D(Collider2D other)
     {
        if(other.tag == "Player")
         {
-
+            AudioSource.PlayClipAtPoint(levelExitSFX, Camera.main.transform.position);
             StartCoroutine(LoadNextLevel());
 
         }
